@@ -34,7 +34,7 @@ export const ColorPickerDemo = () => {
         />
 
         <a
-          href='https://github.com/nightspite/shadcn-color-picker/src/components/color-picker.tsx'
+          href='https://github.com/nightspite/shadcn-color-picker/blob/master/src/components/ui/color-picker.tsx'
           className='block'
         >
           <Button>View code</Button>
