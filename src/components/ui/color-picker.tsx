@@ -21,10 +21,10 @@ interface ColorPickerProps {
 
 const ColorPicker = forwardRef<
   HTMLInputElement,
-  Omit<ButtonProps, 'value' | 'onChange' | 'onBlur'> & ColorPickerProps
+  Omit<ButtonProps, 'value' | 'onChange' | 'onBlur'> & ColorPickerProps & ButtonProps
 >(
   (
-    { disabled, value, onChange, onBlur, name, className, ...props },
+    { disabled, value, onChange, onBlur, name, className, size, ...props },
     forwardedRef
   ) => {
     const ref = useForwardedRef(forwardedRef);
@@ -44,7 +44,7 @@ const ColorPicker = forwardRef<
             onClick={() => {
               setOpen(true);
             }}
-            size='icon'
+            size={size}
             style={{
               backgroundColor: parsedValue,
             }}
