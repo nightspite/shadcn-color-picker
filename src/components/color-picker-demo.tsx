@@ -19,7 +19,7 @@ export const ColorPickerDemo = () => {
         <h2>Color picker</h2>
         <ColorPicker
           onChange={(v) => {
-            setColor(v);
+            setColor(v as string);
           }}
           value={color}
         />
@@ -28,7 +28,7 @@ export const ColorPickerDemo = () => {
         <ColorPicker
           disabled
           onChange={(v) => {
-            setColor(v);
+            setColor(v as string);
           }}
           value={color}
         />
